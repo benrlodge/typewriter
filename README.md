@@ -23,11 +23,8 @@ Toss in some js
 $(".show_stuff_here").typewriter({ typing_speed: '100', location: '.here', delay: 0 });
 ```
 
-Or if you drink coffee
-
-```javascript
-$(".show_stuff_here").typewriter typing_speed: '125' , delay: 500
-```
+All options
+...coming soon
 
 ## Settings
 

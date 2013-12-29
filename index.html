@@ -1,13 +1,32 @@
 <html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="jquery.typewriter.js"></script>
+
+
 </head>
 <body>
 
 <h1>TYPE ME OUT!</h1>
 	
-	<div class="show_shit_here" data-text="MURDER, SHE WROTE"></div>
+	<div id="demo" data-text="MURDER, SHE WROTE"></div>
 
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.typewriter.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	$("#demo").typewriter({
+		typing_speed: "125",
+		delay: 200,
+		random: true,
+		randomMax: 200
+
+	});
+
+})
+</script>
 </body>
 </html>
