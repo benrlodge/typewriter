@@ -1,6 +1,6 @@
 # jquery.typewriter
 
-A very simple, lightweight jQuery plugin for animating text giving it a typewriter effect
+A simple, lightweight jQuery plugin for animating text, giving it a typewriter effect
 
 ## Installation
 ```html
@@ -14,19 +14,19 @@ A very simple, lightweight jQuery plugin for animating text giving it a typewrit
 Toss in your html
 
 ```html
-	<div class="show_shit_here" data-text="This is the text to animate"></div>
+<div class="show_stuff_here" data-text="This is the text to animate"></div>
 ```
 
 Toss in some js
 
 ```javascript
-$(".show_shit_here").typewriter({ typing_speed: '100', location: '.here', delay: 0 });
+$(".show_stuff_here").typewriter({ typing_speed: '100', location: '.here', delay: 0 });
 ```
 
 Or if you drink coffee
 
 ```javascript
-$(".show_shit_here").typewriter typing_speed: '125' , delay: 500
+$(".show_stuff_here").typewriter typing_speed: '125' , delay: 500
 ```
 
 ## Settings
