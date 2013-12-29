@@ -14,21 +14,21 @@ A simple, lightweight jQuery plugin for animating text, giving it a typewriter e
 Toss in your html
 
 ```html
-<div class="show_stuff_here" data-text="This is the text to animate"></div>
+<div class="show_stuff_here" data-text="This is the text to be animated"></div>
 ```
 
-Toss in some js
+Toss in the js
 
 ```javascript
-$(".show_stuff_here").typewriter({ typing_speed: '100', location: '.here', delay: 0 });
+$("#show_stuff_here").typewriter();
 ```
 
-All options
-...coming soon
-
-## Settings
+## All Options
 
 ```javascript
-typing_speed: 400 (number) // speed of letters typed
+typing_speed: 400 (number) // steady speed of letters typed
+random: true or false (boolean) // randomize the speed of letters typed
+randomMax: 800 (number) // maximum number in milliseconds for random setting (random from 0 to this number)
 delay: 400 (number) //setTimout delay
+
 ```
