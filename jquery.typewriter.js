@@ -12,10 +12,10 @@
         randomMax: 400
       }, options);
       return this.each(function() {
-        var randMax, speed, writeThis;
+        var randMax, speed, typeChar;
         speed = settings.typing_speed;
         randMax = settings.randomMax;
-        writeThis = function(the_text, n) {
+        typeChar = function(the_text, n) {
           if (n < the_text.length) {
             if (settings.random) {
               speed = Math.floor(Math.random() * randMax);
@@ -23,12 +23,12 @@
             $(location).html(the_text.substring(0, n + 1));
             n++;
             return setTimeout((function() {
-              return writeThis(the_text, n);
+              return typeChar(the_text, n);
             }), speed);
           }
         };
         return setTimeout((function() {
-          return writeThis(the_text, 0);
+          return typeChar(the_text, 0);
         }), settings.delay);
       });
     };
