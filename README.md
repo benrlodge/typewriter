@@ -20,7 +20,9 @@ Toss in your html
 Toss in the js
 
 ```javascript
-$("#show_stuff_here").typewriter();
+$("#show_stuff_here").typewriter({
+	typing_speed: 400
+});
 ```
 
 ### Randomize Mode
