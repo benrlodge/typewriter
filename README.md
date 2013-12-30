@@ -23,12 +23,24 @@ Toss in the js
 $("#show_stuff_here").typewriter();
 ```
 
+### Randomize Mode
+If you would like to add a more realistic typing speed effect, i.e., not all letters are "typed" at the same speed - you can use the randomize mode. Just set random to true, and set a the randomMax value to the slowest speed you want to allow typed (in milliseconds).
+
+```javascript
+$("#show_stuff_here").typewriter({
+	random: true,
+	randomMax: 800
+});
+```
+
+
+
 ## All Options
 
 ```javascript
-typing_speed: 400 (number) // steady speed of letters typed
+typing_speed: 400 (number) // steady speed of letters typed (not needed if random)
 random: true or false (boolean) // randomize the speed of letters typed
 randomMax: 800 (number) // maximum number in milliseconds for random setting (random from 0 to this number)
-delay: 400 (number) //setTimout delay
+delay: 400 (number) //a setTimout delay before typing begins
 
 ```

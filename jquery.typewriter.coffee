@@ -1,7 +1,6 @@
 $(document).ready ->
 
 
-	# jQuery Dots Plugin
 	$.fn.typewriter = (options) ->
 
 		the_text = @.data('text')
