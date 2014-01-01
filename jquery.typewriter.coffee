@@ -1,5 +1,7 @@
 $(document).ready ->
 
+	log = (m) ->
+		console.log m
 
 	$.fn.typewriter = (options) ->
 
@@ -14,21 +16,49 @@ $(document).ready ->
 			randomMax: 400
 		, options)
 
-		
-		return @each ->
 
+		loadRandom = (params) ->
+			speedRand = []		
+			i = 0
+
+			while i < params.text_len
+				rand = Math.floor( Math.random() * params.randMax )
+				if rand < 100
+					continue
+				speedRand.push(rand)
+				i++
+
+			return speedRand
+		
+
+
+		return @each ->
 			speed = settings.typing_speed
-			randMax = settings.randomMax
+
+			settings.randomMax = 101 if settings.randomMax < 101		
+
+			params =
+				speed 		: settings.typing_speed	
+				randMax 	: settings.randomMax
+				text_len	: the_text.length	
+
+
+
+			speedRandArray = loadRandom(params) if settings.random
+
 
 			typeChar = (the_text, n) ->
 
 				if n < the_text.length
-					speed = Math.floor( Math.random() * randMax ) if settings.random
+					
+					speed = speedRandArray[n] if settings.random
 					$(location).html the_text.substring(0, n + 1)
 					n++
+
 					setTimeout (->
 						typeChar the_text, n
 					), speed
+					log speed
 
 			setTimeout (->
 				typeChar the_text, 0

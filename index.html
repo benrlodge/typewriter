@@ -21,6 +21,15 @@ header{
 .param{
 	color: #7CFC00;
 }
+#paper{
+border: 1px solid #dadada;
+width: 290px;
+height: 200px;
+padding: 1em;
+margin: 0 auto;
+background: #fff;
+}
+
 </style>
 
 </head>
@@ -58,9 +67,9 @@ I am more compelled to get back to work than if I had a success.
 
 </pre>
 
-
-	<div id="demo" data-text=' "I have always been pushed by the negative. The apparent failure of a play sends me back to my typewriter that very night, before the reviews are out. I am more compelled to get back to work than if I had a success." - Tennessee Williams '></div>
-
+	<div id="paper">
+		<div id="demo" data-text=' "I have always been pushed by the negative. The apparent failure of a play sends me back to my typewriter that very night, before the reviews are out. I am more compelled to get back to work than if I had a success." - Tennessee Williams '></div>
+	</div>
 
 
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
@@ -72,10 +81,10 @@ I am more compelled to get back to work than if I had a success.
 $(document).ready(function(){
 
 	$("#demo").typewriter({
-		typing_speed: "125",
+		typing_speed: "425",
 		delay: 200,
 		random: true,
-		randomMax: 150
+		randomMax: 100
 
 	});
 

@@ -1,6 +1,7 @@
 # jquery.typewriter.js
 
-A simple, lightweight jQuery plugin for animating text, giving it a typewriter effect. See a demo at <a href="http://www.benrlodge.com/apps/typewriter">benrlodge.com/apps/typewriter</a>.
+A simple, lightweight jQuery plugin for animating text, giving it a typewriter effect. 
+See a demo at <a href="http://www.benrlodge.com/apps/typewriter">benrlodge.com/apps/typewriter</a>.
 
 ## Installation
 ```html
@@ -26,7 +27,7 @@ $("#show_stuff_here").typewriter({
 ```
 
 ### Randomize Mode
-If you would like to add a more realistic typing speed effect, i.e., not all characters are "typed" at the same speed - you can use the randomize mode. Just set random to true, and set the randomMax value to the slowest speed you want to allow typed (in milliseconds). Each character will receive a random number in milliseconds from 0 to the max you set.
+If you would like to add a more realistic typing speed effect, i.e., not all characters are "typed" at the same speed - you can use the randomize mode. Just set random to true, and set the randomMax value to the slowest speed you want to allow typed (in milliseconds). Each character will receive a random number in milliseconds from 100 to the max you set.
 
 ```javascript
 $("#show_stuff_here").typewriter({
