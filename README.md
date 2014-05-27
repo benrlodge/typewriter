@@ -1,7 +1,7 @@
 # jquery.typewriter.js
 
 A simple, lightweight jQuery plugin for animating text, giving it a typewriter effect. 
-See a demo at <a href="http://apps.benrlodge.com/typewriter/">benrlodge.com/apps/typewriter</a>.
+See a demo at <a href="http://http://www.benrlodge.com/apps/typewriter">benrlodge.com/apps/typewriter</a>.
 
 ## Installation
 ```html
